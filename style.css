@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    45deg, rgb(141, 60, 185), rgb(243, 39, 134)
+  );
+}
+
+h2 {
+/* putting text in the center of the page */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* styling the  text */
+  color: #fff;
+  font-family: lato;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.box div {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: animate 4s linear infinite;
+  background:rgba(255, 255, 255, 0.774);
+  opacity: .2;
+  border-radius: 100%;
+}
+
+.box div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(2) {
+  top: 26%;
+  left: 89%;
+  animation: animate 3s 0.5s linear infinite;
+}
+.box div:nth-child(3) {
+  top: 80%;
+  left: 90%;
+  animation: animate 3s linear infinite;
+}
+.box div:nth-child(4) {
+  top: 65%;
+  left: 75%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 3s 0.2s linear infinite;
+}
+.box div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(7) {
+  top: 70%;
+  left: 33%;
+  animation: animate 4s linear infinite;
+}
+.box div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(9) {
+  top: 23%;
+  left: 50%;
+  animation: animate 5s linear infinite;
+}
+.box div:nth-child(10) {
+  top: 35%;
+  left: 7%;
+  animation: animate 4s 0.5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: scale(1) translateY(400px) ;
+    }
+    100% {
+    transform: scale(0) translateY(0px) ;
+  }
+}
